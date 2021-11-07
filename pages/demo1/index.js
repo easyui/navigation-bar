@@ -11,6 +11,7 @@ Page({
       success: e => {
         if (e.confirm) {
           const pages = getCurrentPages();
+          // console.log(pages)
           if (pages.length >= 2) {
             wx.navigateBack({
               delta: 1

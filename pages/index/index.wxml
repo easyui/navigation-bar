@@ -1,5 +1,12 @@
-<view class='main-wrapper'>
-    <navBar background='#fff' searchBar="{{true}}" bindsearch='search' />
+<view class='main-wrapper333'>
+    <navBar background='#666' searchBar="{{true}}" bindsearch='search' >
+        <!-- <view class='lxy-nav-bar-search' slot="right">
+            <view class='lxy-nav-bar-search__icon' />
+            <view class='lxy-nav-bar-search__input'>
+                <input autoFocus="true" bindconfirm="confirmSearch" bindinput="search" class="srch-ipt" confirmType="search" placeholder="rrr" placeholderClass="ipt-placeholder" type="text" value=""></input>
+            </view>
+        </view> -->
+    </navBar>
     <view class='main'>
         <navigator url='/pages/demo1/index'>
             <view class='p active'>例子1: 点击跳转搜索页</view>

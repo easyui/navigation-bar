@@ -20,5 +20,7 @@ Page({
     wx.navigateTo({
       url: '/pages/index/index'
     });
+  },
+  onShareAppMessage() {
   }
 });

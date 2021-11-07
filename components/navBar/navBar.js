@@ -110,16 +110,19 @@ Component({
       } else {
         navBarLeft = [`width:auto`, `margin-left:0px`].join(';');
       }
-      if (life === 'created') {
-        this.data = {
-          navigationbarinnerStyle,
-          navBarLeft,
-          navBarHeight,
-          capsulePosition,
-          navBarExtendHeight,
-          ios
-        };
-      } else {
+      // if (life === 'created') {
+      //   console(life)
+
+      //   console("life === 'created'")
+      //   this.data = {
+      //     navigationbarinnerStyle,
+      //     navBarLeft,
+      //     navBarHeight,
+      //     capsulePosition,
+      //     navBarExtendHeight,
+      //     ios
+      //   };
+      // } else {
         this.setData({
           navigationbarinnerStyle,
           navBarLeft,
@@ -128,7 +131,7 @@ Component({
           navBarExtendHeight,
           ios
         });
-      }
+      // }
     },
     _showChange: function(value) {
       this.setStyle();
@@ -144,15 +147,23 @@ Component({
       this.triggerEvent('search', {});
     },
     getSystemInfo() {
+      let sssssss = wx.getSystemInfoSync();
+      console.log("sssssss")
+      console.log(sssssss)
       var app = getApp();
       if (app.globalSystemInfo && !app.globalSystemInfo.ios) {
+        console.log("1111111")
         return app.globalSystemInfo;
       } else {
+        console.log("2222222")
         let systemInfo = wx.getSystemInfoSync();
+        console.log(systemInfo)
+        console.log(wx.getSystemInfoSync())
         let ios = !!(systemInfo.system.toLowerCase().search('ios') + 1);
         let rect;
         try {
           rect = wx.getMenuButtonBoundingClientRect ? wx.getMenuButtonBoundingClientRect() : null;
+          console.log(rect)
           if (rect === null) {
             throw 'getMenuButtonBoundingClientRect error';
           }

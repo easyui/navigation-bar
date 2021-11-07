@@ -17,6 +17,8 @@ page {
   --height: 44px; /* 4*2+32 */
   --right: 97px; /* 10+87 */
   --navBarExtendHeight: 4px;
+  /* background: #f81a1a; */
+  /* color:rgb(12, 236, 169); */
   box-sizing: border-box;
 }
 .lxy-nav-bar .android {
@@ -50,6 +52,7 @@ page {
   /*  padding-left: 10px; */
   display: flex;
   align-items: center;
+  background-color: red;
 }
 .lxy-nav-bar__buttons {
   height: 100%;
@@ -63,6 +66,9 @@ page {
 .lxy-nav-bar__buttons.android {
   border: 1rpx solid rgba(234, 234, 234, 0.6);
 }
+/* .lxy-nav-bar__buttons.ios {
+  border: 1rpx solid rgba(234, 234, 234, 0.6);
+} */
 .lxy-nav-bar__buttons::after {
   position: absolute;
   content: '';
@@ -102,6 +108,7 @@ page {
   align-items: center;
   justify-content: center;
   padding-left: 10px;
+  background-color: red;
 }
 .lxy-nav-bar__inner .lxy-nav-bar__center .lxy-nav-bar__center-title {
   margin-top: -2px;
@@ -115,12 +122,12 @@ page {
 .lxy-nav-bar__inner .lxy-nav-bar__right {
   margin-right: 10px;
 }
-.lxy-nav-bar__placeholder {
+/* .lxy-nav-bar__placeholder {
   height: var(--height);
   background: #f8f8f8;
   position: relative;
   z-index: 50;
-}
+} */
 
 .lxy-nav-bar-search {
   width: 100%;
